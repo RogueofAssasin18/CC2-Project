@@ -1,0 +1,44 @@
+package fibonacci;
+
+import java.util.Scanner;
+public class Fibonacci {
+
+    
+    public static void main(String[] args) {
+      display();
+    }
+    public static int userInput(){
+    int n;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter Fibonacci Series: ");
+    n = sc.nextInt();
+    return n;
+    }
+    public static void display(){
+    int n = userInput();
+    int i;
+    int j;
+    int a;
+      for(a = 0; a <= n; a++){
+        System.out.print("f(" + a + ")" + "\t");
+      }
+        System.out.println("");
+      for(i = 0; i <= n; i++){
+        for(j = 0; j <= i; j++){
+        System.out.print(fibo(j) + "\t");
+        }
+        System.out.println("");}
+    }
+      
+    public static int fibo(int n){
+    if(n == 0){
+    return 0;
+    }
+    else if(n == 1){
+    return 1;
+    }
+    else{
+         return fibo(n-1) + fibo(n-2);
+    }
+    }
+    }
