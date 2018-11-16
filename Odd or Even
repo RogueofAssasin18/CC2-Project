@@ -1,0 +1,36 @@
+package javaapplication12;
+
+import java.util.ArrayList;
+public class JavaApplication12 {
+
+    
+    public static void main(String[] args) {
+         int[] n = {3,9,15,20,65,23,18,4,2,14};
+         String[] headers = {"Even Numbers","Odd Numbers"}; 
+        
+         ArrayList<Integer> odd = new ArrayList();
+         ArrayList<Integer> even = new ArrayList();
+         
+        
+         for (int i = 0; i < n.length; i++){ 
+             // .length for arrays
+         if(n[i] % 2 == 0){
+                even.add(n[i]);}
+         else{ odd.add(n[i]);}
+         }
+         System.out.println("Array: 3,9,15,20,65,23,18,4,3,14");
+         System.out.println(headers[0] + "\t" +  headers[1]);
+         System.out.println("-----------------------");
+         
+         for(int i = 0; i < even.size(); i++){
+            //.size for array list
+             System.out.print(even.get(i) + "\t");
+             System.out.print( "|" + "\t");
+             System.out.print(odd.get(i) + "\t");
+             System.out.print("\n");
+             
+         }
+       
+        }//end of main
+       
+    }//end of class
