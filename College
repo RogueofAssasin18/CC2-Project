@@ -1,0 +1,38 @@
+package nestedif;
+
+import java.util.Scanner;
+
+public class NestedIf {
+
+    
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter your College: ");
+    String course = sc.next();
+    
+    if(course.equalsIgnoreCase("CAS")); {
+        System.out.println("Enter Your Track: ");
+        String track = sc.next();
+        if(track.equalsIgnoreCase("PoliticalScience")){
+           System.out.println("Your Track is: " + track);}
+        else if(track.equalsIgnoreCase("Psychology" + track)) {
+           System.out.println("Your Track is: " + track);}
+        else if(track.equalsIgnoreCase("BehavioralScience" + track)) {
+           System.out.println("Your Track is: " + track);
+        }else{System.out.println("Your Track is: " + track);}
+        
+    if(course.equalsIgnoreCase("CITCS")); {
+        System.out.println("Enter Your CITCS Track: ");
+        String citcs = sc.next();
+        if(citcs.equalsIgnoreCase("WebTechnology")){
+           System.out.println("Your Track is: " + citcs);}
+        else if(citcs.equalsIgnoreCase("InformationTechnology")){
+           System.out.println("Your Track is: " + citcs);}
+        else if(citcs.equalsIgnoreCase("ComputerScience")){
+           System.out.println("Your Track is: " + citcs);}
+    }
+        
+    }
+    
+}
+}
