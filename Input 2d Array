@@ -1,0 +1,34 @@
+package javaapplication18;
+
+import java.util.Scanner;
+public class JavaApplication18 {
+
+    
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+     
+      System.out.println("Number of Rows: ");
+         int rows= sc.nextInt();
+      System.out.println("Number of Columns: ");
+         int columns = sc.nextInt();
+      
+      System.out.println("Enter elements:");
+      int nums[][] = new int[rows][columns];
+      
+      for(int i = 0; i < rows; i++){
+      for(int j = 0; j < columns; j++){
+      System.out.print("Row [" + i +"] Column[" + j +"] = ");
+         nums[i][j] = sc.nextInt();  
+      }
+    }
+      System.out.println("\nData You Entered:  \n");
+      for(int[]x:nums){ 
+       for(int a:x){  
+         
+      System.out.print(a +"\t");       
+       }
+      System.out.println();
+       
+      }
+    }//end of block
+}//end of class
