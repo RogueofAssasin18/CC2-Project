@@ -1,0 +1,45 @@
+package calculator;
+
+import java.util.Scanner;
+public class Calculator {
+
+   
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Select Operator: Addition, Subtraction, Multiplication, Division");
+        String operator = sc.next();
+                
+        System.out.println("Enter First Value: ");
+        int x = sc.nextInt();
+        System.out.println("Enter Second Value: ");
+        int y = sc.nextInt();
+        double output = 0;
+        
+        switch(operator){
+            case "+":
+            case "add":
+                System.out.println(x+y);
+                break;
+        }
+         switch(operator){
+            case "-":
+            case "minus":
+                System.out.println(x-y);
+                break;
+        }
+          switch(operator){
+            case "*":
+            case "Multiply":
+                System.out.println(x*y);
+                break;
+        }
+           switch(operator){
+            case "/":
+            case "divide":
+                System.out.println(x/y);
+                break;
+        }
+           System.out.println("Output is: ");
+        
+    }
+}
